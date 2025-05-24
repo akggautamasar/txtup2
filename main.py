@@ -46,7 +46,7 @@ bot = Client(
 # ... later in your code
 # bot.run()
 api_id= 22649259,
-api_hash= "545169590ffbfe0bf8bade55e3a1cfde")
+api_hash= "545169590ffbfe0bf8bade55e3a1cfde"
 auth_users = [6221765779,6200710535,5753557653,6404553499]
 #romeo  -1923922961 
 
