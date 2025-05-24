@@ -29,7 +29,7 @@ from bs4 import BeautifulSoup
 import datetime
 import aiohttp
 
- import os
+import os
 from pyrogram import Client
 
 API_ID = int(os.environ.get("API_ID")) # Convert to int
