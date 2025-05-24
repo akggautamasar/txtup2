@@ -29,15 +29,29 @@ from bs4 import BeautifulSoup
 import datetime
 import aiohttp
 
-bot = Client("bot",
-             bot_token= "6556042495:AAEYgNL0EDhqpA7P6SLJ-dzFath0q7gzttA", 
-             #bot_token= os.environ.get("BOT_TOKEN"),
-             api_id= 28590119,
-             api_hash= "2494557bf21e6c5152f26070aa1a97c7")
-auth_users = [1923922961,6200710535,5753557653,6404553499]
+ import os
+from pyrogram import Client
+
+API_ID = int(os.environ.get("API_ID")) # Convert to int
+API_HASH = os.environ.get("API_HASH")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+
+# Assuming 'bot' is your Client instance
+bot = Client(
+    "my_bot_session", # Session name (e.g., 'my_bot_session')
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
+)
+
+# ... later in your code
+# bot.run()
+             api_id= 22649259,
+             api_hash= "545169590ffbfe0bf8bade55e3a1cfde")
+auth_users = [6221765779,6200710535,5753557653,6404553499]
 #romeo  -1923922961 
 
-owner_id = 1923922961
+owner_id = 6221765779
 # Extras 
 failed_links = []  # List to store failed links
 fail_cap =f"**➜ This file Contain Failed Downloads while Downloding \n You Can Retry them one more time **"
